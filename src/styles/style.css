@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html{
+	scroll-behavior:smooth;
+}
+
+/* ----------------------------- NAVEGAÇÃO ----------------------------- */
+
+
+.header-logo{
+	display: flex;
+	justify-content: center;
+}
+
+.logo{
+	padding: 5px;
+	height: 100px;
+}
+
+.list-nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	text-transform: uppercase;
+	list-style: none;
+	padding: 20px 0;
+	background-color: #DCE8EF;
+}
+
+.option-nav a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #005483;
+}
+
+.option-nav a:hover{
+	font-weight: bold;
+}
+
+/* ----------------------------- MAIN ----------------------------- */
+
+.container-home{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 80vh;
+	color: #FFFFFF;
+	background-image: url('../img/background.jpg');
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.content{
+	text-align: justify;
+	font-size: 20px;
+	width: 50%;
+}
+
+/* ----------------------------- PRODUTOS ----------------------------- */
+
+#products{
+	background-color:  #005483;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	height: 100vh;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	height: 83%;
+}
+
+.img-product{
+	width: 450px;
+	height: 350px;
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+}
+
+.lista-produtos{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	font-size: 20px;
+	height: 100%;
+}
+
+.div-right{
+	width: 450px;
+	height: 350px;
+}
+
+.title{
+	background-color: #DCE8EF;
+	color: #005483;
+	text-align: center;
+	padding: 30px;
+}
+
+/* ----------------------------- SERVIÇOS ----------------------------- */
+
+#services{
+	background-color:  #005483;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	height: 100vh;
+}
+
+/* ----------------------------- CONTATO ----------------------------- */
+
+
+#contact{
+	background-color: #005483;
+	color: #FFFFFF;
+	height: 100vh;
+}
+
+section form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 80%;
+	width: 35%;
+}
+
+section form ::placeholder{
+	color: white;
+	font-weight: 300;
+}
+
+.field{
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 0px 10px;
+	background-color: transparent;
+	line-height: 30px;
+	outline: none;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.message{
+	border: 1px solid white;
+	border-radius: 5px;
+	background-color: transparent;
+	padding: 10px;
+	color: white;
+	outline: none;
+}
+
+.btn{
+	border: 1px solid white;
+	border-radius: 5px;
+	line-height: 30px;
+	margin-top: 20px;
+	font-size: 20px;
+	background-color: #DCE8EF;
+	color: #005483;
+	text-transform: uppercase;
+	outline: none;
+}
+
+.btn:hover{
+	border: 1px solid #DCE8EF;
+	background-color: #C1D2DD;
+	cursor: pointer;
+	transition: .5s;
+}
+
+#hello{
+	height: 100%;
+	width: 40%;
+}
+
+
+#whatsapp{
+	position:fixed;
+	bottom: 10px;
+	right: 20px;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+#whatsapp img{
+	height: 50px;
+	width: 50px;
+}
+
+/* ----------------------------- FOOTER ----------------------------- */
+
+footer{
+	border-top: 1px solid white;
+	background-color: #005483;
+	color: white; 
+	height: 30vh;
+}
+
+footer img{
+	width: 194px;
+	height: 45px;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	height: 90%;
+}
+
+footer ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+footer p{	
+	text-align: center;
+}
+
+footer p a{
+	color: #FFFFFF;
+}
+
+footer p a:hover{
+	font-weight: bolder;
+}
+
+.icons{
+	width: 15px;
+	height: 15px;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHILE-TEC - Ferramentaria</title>
+  <meta name="description" content="Especialistas em periféricos para máquinas de sopro. Desenvolvemos produtos e consertos para seu maquinário.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="home">
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="./src/images/logo-dark.png" alt="Logo CHILE-TEC" class="nav__logo-img">
+      </div>
+      
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <a href="#home" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#products" class="nav__link">Produtos</a>
+        </li>
+        <li class="nav__item">
+          <a href="#services" class="nav__link">Serviços</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contato</a>
+        </li>
+      </ul>
+
+      <button class="nav__toggle" id="nav-toggle">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">CHILE-TEC Ferramentaria</h1>
+      <p class="hero__description">
+        Estamos no mercado há mais de 20 anos, somos especializados em periféricos para máquinas de sopro. 
+        Desenvolvemos produtos personalizados para o seu maquinário e também realizamos consertos especializados.
+      </p>
+      <a href="#products" class="hero__cta">Conheça nossos produtos</a>
+    </div>
+    <div class="hero__overlay"></div>
+  </main>
+
+  <!-- Products Section -->
+  <section id="products" class="section products">
+    <div class="container">
+      <h2 class="section__title">Produtos</h2>
+      
+      <div class="products__content">
+        <div class="products__image">
+          <img src="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Máquina de sopro" class="products__img">
+        </div>
+        
+        <div class="products__info">
+          <h3 class="products__subtitle">Construímos produtos com qualidade</h3>
+          <ul class="products__list">
+            <li class="products__item">
+              <span class="products__icon">🔧</span>
+              Periféricos para sopro
+            </li>
+            <li class="products__item">
+              <span class="products__icon">🔩</span>
+              Pinos de sopro
+            </li>
+            <li class="products__item">
+              <span class="products__icon">⚙️</span>
+              Trafilas
+            </li>
+            <li class="products__item">
+              <span class="products__icon">🔗</span>
+              Flange
+            </li>
+            <li class="products__item">
+              <span class="products__icon">🛠️</span>
+              Castanhas
+            </li>
+            <li class="products__item">
+              <span class="products__icon">➕</span>
+              Outros produtos sob medida
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2 class="section__title">Serviços</h2>
+      
+      <div class="services__content">
+        <div class="services__info">
+          <h3 class="services__subtitle">Serviços especializados para suas máquinas</h3>
+          <ul class="services__list">
+            <li class="services__item">
+              <span class="services__icon">🔄</span>
+              Restauração de pinos de sopro
+            </li>
+            <li class="services__item">
+              <span class="services__icon">🔧</span>
+              Conserto de pinos de sopro
+            </li>
+            <li class="services__item">
+              <span class="services__icon">🏗️</span>
+              Reforma de moldes
+            </li>
+            <li class="services__item">
+              <span class="services__icon">⚡</span>
+              Reforma de gargalo
+            </li>
+          </ul>
+        </div>
+        
+        <div class="services__image">
+          <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Serviços de manutenção" class="services__img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section__title">Contato</h2>
+      
+      <div class="contact__content">
+        <form action="https://formsubmit.co/diego88_06@hotmail.com" method="POST" class="contact__form" id="contact-form">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+          <input type="hidden" name="_captcha" value="false">
+          <h3 class="contact__subtitle">Para orçamentos ou dúvidas entre em contato conosco</h3>
+          
+          <div class="form__group">
+            <input type="text" class="form__input" name="name" id="name" placeholder="Nome" required>
+          </div>
+          
+          <div class="form__group">
+            <input type="email" class="form__input" name="email" id="email" placeholder="E-mail" required>
+          </div>
+
+          <div class="form__group">
+            <input type="tel" class="form__input" name="tel" id="tel" placeholder="Telefone" required>
+          </div>
+          
+          <div class="form__group">
+            <textarea class="form__textarea" name="message" id="message" rows="6" placeholder="Mensagem" required></textarea>
+          </div>
+          
+          <button type="submit" class="form__button">Enviar mensagem</button>
+
+        </form>
+        
+        <div class="contact__info">
+          <div class="contact__card">
+            <h4 class="contact__card-title">Informações de contato</h4>
+            
+            <div class="contact__item">
+              <span class="contact__icon">📧</span>
+              <a href="mailto:chiletec@uol.com.br" class="contact__link">chiletec@uol.com.br</a>
+            </div>
+            
+            <div class="contact__item">
+              <span class="contact__icon">📱</span>
+              <span>(11) 94776-0125</span>
+            </div>
+           
+            <div class="contact__item">
+              <span class="contact__icon">📍</span>
+              <a href="https://maps.app.goo.gl/AWr5ehj3JoR9JAvw9" target="_blank" class="contact__link">
+                R. das Paineiras, 94 - Jardim dos Lagos<br>
+                04476-235 - São Paulo - SP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img src="./src/images/logo-white.png" alt="CHILE-TEC" class="footer__logo-img">
+        </div>
+        
+        <div class="footer__info">
+          <p class="footer__text">
+            Especialistas em periféricos para máquinas de sopro desde 2000.
+          </p>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2024 CHILE-TEC. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://api.whatsapp.com/send?phone=5511947760125&text=Ol%C3%A1,%20gostaria%20de%20realizar%20um%20or%C3%A7amento" 
+     target="_blank" 
+     class="whatsapp-float"
+     aria-label="Contato via WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+    </svg>
+  </a>
+
+  <script src="./src/scripts/main.js"></script>
+</body>
+</html>
